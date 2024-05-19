@@ -1,11 +1,15 @@
 //extract the first four characters
-
+{
+    let a= "beautiful";
+const extract = a.slice(0, 4);
+console.log(extract);
+}
 
 //insert string at tenth index
 
 {
     let food ="I did not have appetite today"
-food=food.split('')
+food=food.split(" ")
 console.log(food);
 food[10]="eat"
 console.log({food});
@@ -13,41 +17,55 @@ console.log({food});
 
 
 //how many times the string appears("the" and "s")
-
-{}
-
-//convert strings to uppercase/lowercase/titlecase
 {
-    function toUpperCase(){
-    let uppercase="CONfidant"
- return toUpperCase;
+
+    let story = "She sells sea shells at the sea shore";
+const a = "the";
+const b= "s";
+function countOccurrences(mainStr, subStr) {
+    return mainStr.split(subStr).length - 1;
 }
-console.log(toUpperCase);
+const countThe = countOccurrences(story.toLowerCase(), a.toLowerCase());
+const countS = countOccurrences(story.toLowerCase(), b.toLowerCase());
+
+console.log("Occurrences of 'the':", countThe);
+console.log("Occurrences of 's':", countS);
 }
 
+//convert string to uppercase
 {
-    function toLowerCase(){
-   let lowercase="beatiFUL"
- return toLowerCase;
-}
-console.log(toLowerCase);
+    let a= "CONfidant";
+const upperCaseString = a.toUpperCase();
+
+console.log(upperCaseString);
 }
 
-{
-   function toTitlecase(){ 
-   let titlecase="A busy office"
- return toTitlecase();
-  }
-console.log(toTitlecase);
-}
-
+// convert string to lowercase
 
 {
-    function count(){
-let string1= "The lady went to the market with her sister"
-count=0
-console.log(count);
-for(i=0, i<string1, i++ );
-    }
-    console.log(string1);
+  let b="beuatiFUL"
+  const lowerCaseString = b.toLowerCase()
+
+  console.log(lowerCaseString);
 }
+
+// convert string to title case
+
+{
+   let c="A busy office"
+   let titleCase= c.toTitleCase()
+
+   console.log(titleCase);
+}
+
+//find the word in the string 
+//(market)
+
+//{
+
+//let string1= "The lady went to the market with her sister"
+//const wordToFind = "market";
+//const a = string1.split(" ");
+
+//console.log(a);
+  //  }

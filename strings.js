@@ -69,3 +69,51 @@ console.log(upperCaseString);
 
 //console.log(a);
   //  }
+
+
+
+  //1st element 
+ { let arr1 = [3, 7, 34, 90, 12];
+let lastElement = arr1[arr1.length - 1];
+console.log(lastElement);
+ }
+
+
+{
+    let arr2 = [true, "green", "where", 12, 56];
+let lastElement = arr2[arr2.length - 1];
+console.log(lastElement);
+}
+
+
+//join into a string
+{
+let myPets = ["Cow", "Python", "Snake", "Dog"];
+let joinedString = myPets.join(", ");
+console.log(joinedString);
+}
+
+// sort the arrays
+{
+let arr = [-5, 9, 5, 3, 2, -3, 6, 8, 4, 1];
+arr.sort(function(a, b) {
+    return a - b;
+});
+
+console.log(arr); 
+
+}
+// sort the string
+{
+    let word = "lufituaeb";
+
+    let reversedWord = word.split('').reverse().join('');
+
+console.log(reversedWord); 
+}
+
+//remove duplicate from arrrays
+{
+    let array=["apple","mango","apple",
+           "orange", "mango", "mango"]
+}

@@ -114,6 +114,15 @@ console.log(reversedWord);
 
 //remove duplicate from arrrays
 {
-    let array=["apple","mango","apple",
-           "orange", "mango", "mango"]
-}
+    let array=["apple","mango","apple","orange", "mango", "mango"]
+    let removeDuplicate = (array)=>{
+        let newarray = [];
+        array.forEach(item =>{
+            if(!removeDuplicate.includes(item)){
+                removeDuplicate.push(item)
+            }
+        })
+        return newarray;
+    }
+    console.log(removeDuplicate(array));
+    }
